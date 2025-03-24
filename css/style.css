@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff2),
+    url(/fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff)
+    url(/fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot);
+    font-weight: 700;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Playfair Display";
+    src: url(/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff2),
+    url(/fonts/PlayfairDisplay/PlayfairDisplay-Regular.woff)
+    url(/fonts/PlayfairDisplay/PlayfairDisplay-Regular.eot);
+    font-weight: 400;
+    font-style:normal;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url(/fonts/Montserrat/Montserrat-Regular.woff2),
+    url(/fonts/Montserrat/Montserrat-Regular.woff)
+    url(/fonts/Montserrat/Montserrat-LightItalic.eot);
+    font-weight: 400;
+    font-style:normal;
+}
+html{
+    box-sizing: border-box;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+
+}
+form{
+    max-width: 500px;
+    flex-wrap: wrap;
+}
+
+input, select{
+    padding-top: 20px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #c5c5c4;
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    outline: none;
+}
+input::placeholder, select{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.5;
+    border: none;
+
+}
+select{
+    cursor: pointer;
+    max-width: 500px;
+}
+
+.wrapper{
+    background-color: #F4F3EF;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.main{
+    flex-grow: 1;
+}
+
+
+.display_justify-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section__title{
+    font-family: 'Playfair Display"';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 90px;
+    
+}
+.section__subtitle {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.text{
+    margin-top: 12px;
+}
+
+.link{
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background-color: #030101;
+    color: #fff;
+    font-family: 'Playfair Display"';
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.button__arrow{
+    color: #151515;
+    background-color: #F4F3EF;;
+    border: 1px solid #030101;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 40px;
+    position: fixed;
+    right:0;
+    bottom: 10px;
+    text-align: center;
+}
+
+.header, .footer{
+    background-color: #030101;
+    color: #fff;
+    font-family: 'Playfair Display"';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header{
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+}
+.header__inner{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: flex-end;
+ }
+ 
+ 
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-transform: uppercase;
+}
+
+
+.footer__inner{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+
+.top{
+    padding: 10px 0 280px;
+}
+.top__inner {
+    align-items: flex-start;
+}
+
+.top__text {
+    padding-top: 50px; 
+    margin-right: 20px;
+}
+.top__images{
+    margin-top: 250px;
+}
+
+.top__title {
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: 200px;
+}
+
+.title--up{
+    display: inline-block;
+    transform: translate(505px, 80px);
+}
+
+
+.about{
+    padding: 50px 0 200px;
+}
+
+
+.lifestyle, .merch{
+    background-color: #030101;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.lifestyle__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.lifestyle__text{
+    text-align: center;
+    margin: 50px 0 50px;
+}
+.lifestyle__text p{
+    letter-spacing: 1px;
+}
+
+
+.events{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.events__item{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.event__text, .text{
+    max-width: 575px;
+    text-align: left;
+    letter-spacing: 140%;
+}
+
+.event__text{
+    padding-left: 10px;
+    text-align: right;
+    
+}
+.event__text h4{
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: left;
+
+}
+.event__discription{
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+
+.merch__list{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.contacts{
+    padding-top: 50px;
+    padding-bottom: 150px;
+}
+
+.form{
+    text-align: center;
+    margin-top: 20px;
+}
+.form h4{
+    text-align: left;
+    font-size: 20px;
+}
+.input{
+    width: 100%;
+}
+.btn_submit{
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.link:hover{
+    background-color: #FFDD00;
+    color: #030101;
+    transition: all .5s;
+}
+
+.menu-link:hover{
+    color: #FFDD00;
+    transition: all .5s;
+}
+
+.catchword:hover,.about__img:hover {
+    -webkit-transform: rotate(-15deg);
+    rotate: -15deg;
+    transition: rotate(-15deg) .5s;
+}
+
